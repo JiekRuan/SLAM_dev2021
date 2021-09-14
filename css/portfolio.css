@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+html{
+    font-size: 62.5%;
+    background: url(/asset/flatdesignwp.jpg) no-repeat;
+}
+body{
+    font: 1.6rem, "Kaisei HarunoUmi", sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,ol,ul,li,p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    list-style: none;
+}
+:root{
+    --color-default: rgba(53, 59, 72,1.0);
+    --color-primary: rgba(0, 151, 230,1.0);
+    --color-warning: rgba(194, 54, 22,1.0);
+    --color-success: rgba(68, 189, 50,1.0);
+}
+header{
+    font-size: large;
+    margin: 2rem;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem;
+    max-width: 100%;
+}
+section{
+    margin: 1rem;
+    border: solid rgb(88, 87, 87);
+    border-radius: 1rem;
+    animation: slideUp 3s ease-in-out;
+}
+section h2{
+    text-align: center;
+    font-size: xx-large;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: .7rem;
+}
+section ul{
+    list-style: none;
+    font-size: 2rem;
+    margin: 1rem;
+}
+footer{
+    margin: 2rem;
+    text-align: center;
+}
+@keyframes slideUp{
+    0%{
+        transform: translateX(10rem);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
