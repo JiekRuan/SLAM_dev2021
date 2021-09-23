@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mon portfolio">
-    <title>JiekRuan</title>
+    <title>Portfolio JiekRuan</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon-16x16.png">
+    <link rel="manifest" href="./asset/site.webmanifest">
     <link rel="stylesheet" href="./css/portfolio.css">
 </head>
 <body>
     <header>
         <h1><img src="./asset/user.svg" alt="mon profil"> Jiek Ruan</h1>
-        <h2>Développeur web</h2>
+        <h2><span class="material-icons">
+            settings
+            </span>
+            Développeur web</h2>
     </header>
     <hr>
+    <div class="aside" id="aside" role="complementary" aria-labelledby="title">
+        <h2 id="title">presentation</h2>
+    </div>
     <main>
         <nav>
         <!--Section sur mes expériences-->
@@ -21,10 +32,10 @@
             <h2>Mon expérience</h2>
             <ul>
                 <li>
-                    Stage chez LJC
+                   <time datetime="2021-06-20">2021</time> <strong> Stage chez LJC</strong> <br> Pour le poste de développeur fullstack
                 </li>
                 <li>
-                    Job d'été
+                    <time datetime="2018-07-01"> été 2017/2018/2019</time> <strong>5ème Saison</strong> <br> Pour le poste de vendeur polyvalent
                 </li>
             </ul>
         </section>
@@ -32,25 +43,41 @@
         <section>
             <h2>Mes compétences</h2>
             <ul>
-                <li>HTML<sub>5</sub></li>
-                <li>CSS <sub>3</sub></li>
+                <li>HTML<sub>5</sub> / CSS <sub>3</sub></li>
                 <li>JavaScript</li>
-                <li>SQL</li>
+                <li>Postgresql</li>
+                <li>Java</li>
+            </ul>
+        </section>
+        <!--Section sur mes logiciels-->
+        <section>
+            <h2>Mes logociels</h2>
+            <ul>
+                <li>VScode</li>
+                <li>eclyspe</li>
+                <li>pgAdmin 4</li>
+                <li>Postman</li>
             </ul>
         </section>
         <!--Section sur mes loisirs-->
         <section>
             <h2>Mes loisirs</h2>
             <ul>
-                <li>Gaming</li>
-                <li>Coding</li>
-                <li>Rotaract</li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
         </section>
     </nav>
         <footer>
+            <ul>
+                <li><address>3 allée massenet, Saint-michel sur orge 91240</address></li>
+                <li>tél: 0651788877</li>
+                <li>mail: ruanjiek2001@gmail.com</li>
+            </ul>
             <p>&copy; JiekRuan - 2021</p>
         </footer>
     </main>
+    <script src="./js/app.js"></script>
 </body>
 </html>
