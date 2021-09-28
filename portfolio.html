@@ -4,80 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mon portfolio">
-    <title>Portfolio JiekRuan</title>
+    <meta name="description" content="Portfolio - développeur front...">
+    <title>Portfolio - développeur front - javascript</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./asset/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon-16x16.png">
     <link rel="manifest" href="./asset/site.webmanifest">
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <h1><img src="./asset/user.svg" alt="mon profil"> Jiek Ruan</h1>
-        <h2><span class="material-icons">
-            settings
-            </span>
-            Développeur web</h2>
+    <header aria-labelledby="main-title">
+        <h1 id="main-title"><span class="material-icons" aria-hidden="true">
+            table_rows
+            </span>&nbsp;Portfolio - développeur front</h1>
     </header>
-    <hr>
-    <div class="aside" id="aside" role="complementary" aria-labelledby="title">
-        <h2 id="title">presentation</h2>
-    </div>
-    <main>
-        <nav>
-        <!--Section sur mes expériences-->
-        <section>
-            <h2>Mon expérience</h2>
-            <ul>
-                <li>
-                   <time datetime="2021-06-20">2021</time> <strong> Stage chez LJC</strong> <br> Pour le poste de développeur fullstack
-                </li>
-                <li>
-                    <time datetime="2018-07-01"> été 2017/2018/2019</time> <strong>5ème Saison</strong> <br> Pour le poste de vendeur polyvalent
-                </li>
-            </ul>
-        </section>
-        <!--Section sur mes comptétences-->
-        <section>
-            <h2>Mes compétences</h2>
-            <ul>
-                <li>HTML<sub>5</sub> / CSS <sub>3</sub></li>
-                <li>JavaScript</li>
-                <li>Postgresql</li>
-                <li>Java</li>
-            </ul>
-        </section>
-        <!--Section sur mes logiciels-->
-        <section>
-            <h2>Mes logociels</h2>
-            <ul>
-                <li>VScode</li>
-                <li>eclyspe</li>
-                <li>pgAdmin 4</li>
-                <li>Postman</li>
-            </ul>
-        </section>
-        <!--Section sur mes loisirs-->
-        <section>
-            <h2>Mes loisirs</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
+    <nav>
+        <ul>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#competence">Competences</a></li>
+            <li><a href="#web">Web</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#profil">Profil</a></li>
+        </ul>
     </nav>
-        <footer>
+
+    <div class="aside" id="aside" role="complementary" aria-labelledby="title">
+        <h2 id="title">Présentation</h2>
+    </div>
+
+    <main>
+
+        <!--    Section Formation   -->
+
+        <section>
+            <h2 id="formation" class="history"><span class="material-icons" aria-hidden="true">
+                edit
+                </span> Formations</h2>
             <ul>
-                <li><address>3 allée massenet, Saint-michel sur orge 91240</address></li>
-                <li>tél: 0651788877</li>
-                <li>mail: ruanjiek2001@gmail.com</li>
+                <li><time datetime="2003-01-19">2003</time> – </li>
+                <li><time datetime="2003-02-02">2003</time> – </li>
+                <li><time datetime="1998-02-02">1998</time> – </li> 
+                <li><time datetime="1998-02-02">1998</time> – </li>
             </ul>
-            <p>&copy; JiekRuan - 2021</p>
-        </footer>
+        </section>
+
+        <!--    Section Compétences     -->
+        
+        <section>
+            <h2 id="competence" class="history"><span class="material-icons" aria-hidden="true">
+                edit
+                </span>&nbsp;Compétences</h2>
+            <ul>
+                <li><abbr title="HyperTextMarkupLanguage">HTML</abbr><sup>5</sup> / CSS<sub>3</sub></li>
+                <li>ECMAscript : 5,6,7,8</li>
+                <li>Css3</li>
+                <li>PHP 7.5 &amp; SQL</li>
+               
+                
+            </ul>
+        </section>
+
+        <!--    Section Experience     -->
+
+        <section>
+            <h2 id="experience" class="history"><span class="material-icons" aria-hidden="true">
+                edit
+                </span>&nbsp;Expériences professionnelles</h2>
+            <ul>
+                <li><strong><time datetime="2019-09-28">2021</time></strong></li>
+                <li>
+                    <p>
+                        
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!--    Section Logiciel      -->
+
+        <section>
+            <h2 id="logiciel" class="history"><span class="material-icons" aria-hidden="true">
+                edit
+                </span>&nbsp;Logiciel</h2>
+            <ul>
+                <li>
+                   Lorem ipsum dolor sit amet.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet.
+                </li>
+                
+            </ul>
+        </section>
+        
+        <!--    Section Loisirs    -->
+
+        <section>
+            <h2><span class="material-icons" aria-hidden="true">
+                edit
+                </span>&nbsp;Loisirs</h2>
+            <ul>
+                <li>Voyage : J'aime particulièrement le Japon et la Chine</li>
+                <li>Musique : J'aime bien écouter de la musique mais en faire, c'est quand plus difficile</li>
+                <li>Jeux-Vidéos : J'apprécie les jeux en ligne pour se faire de nouveaux amis</li>
+            </ul>
+        </section>
     </main>
+    <!--footer-->
+    <footer  id="profil">
+        <address>
+            <ul>
+                <li>Ruan jiek</li>
+                <li>port : 06 51 78 88 77</li>
+                <li>ruanjiek2001@gmail.com</li>
+                <li>&copy; - 2021 - JiekRuan</li>
+            </ul>
+        </address>
+
+    </footer>
     <script src="./js/app.js"></script>
 </body>
 </html>

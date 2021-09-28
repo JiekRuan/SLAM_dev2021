@@ -1,16 +1,181 @@
-/*un ptit reset css*/
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
-    font: 1.6rem sans-serif;
+    font: 1.6rem "Roboto",sans-serif;
     margin: 0;
 }
-h1,h2,h3,h4,ol,ul,li,p{
+p, ul, ol, h1, h2, h3, address{
+    font-style: normal;
     margin: 0;
     padding: 0;
-}
-a{
     list-style: none;
 }
+a,abbr{
+    text-decoration: none;
+    color: #222;
+}
+*{
+    box-sizing: border-box;
+}
 
+/*theme*/
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+:root{
+    --color-default: rgba(53, 59, 72,1.0);
+    --color-primary: rgb(24, 155, 226);
+    --color-warning: rgba(194, 54, 22,1.0);
+    --color-success: rgba(68, 189, 50,1.0);
+}
+header h1, section h2{
+    line-height: 6.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: var(--color-primary);
+    margin-bottom: 2rem;
+    font-weight: 300;
+    text-shadow: .1rem .1rem 0 var(--color-default-global);
+}
+header h1 .material-icons{
+    display: none;
+    cursor: pointer;
+}
+section h2{
+    top:0;
+    position:sticky;
+}
+nav ul{
+    max-width: 80rem;
+    margin: 0 auto;
+    font-size: 0;
+    margin-bottom: 2rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 4.5rem;
+    font-size: 1.6rem;
+    width: calc(100% / 5);
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    transition: all 500ms ease-in-out;
+}
+nav ul li:hover a{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.aside{
+    background: url(https://blog.lesjeudis.com/wp-content/uploads/2018/06/d%C3%A9veloppeur-informatique_552022249-1600x900.jpg)no-repeat scroll center center / cover;
+    min-height: 50vh;
+    max-width: 120rem;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 1.0rem rgb(117, 116, 116) ;
+    display: grid;
+    align-items: center;
+
+}
+.aside h2{
+    text-align: center;
+    font-size: 10.0rem;
+    color: #fff;
+    text-shadow: .8rem .8rem 0 #333333, 1.1rem 1.1rem 0 #fafafa;
+}
+
+section h2{
+    text-align: left;
+    margin-bottom: 0.3rem;
+    padding: 1rem;
+    line-height: 4.5rem;
+}
+main,footer{
+    max-width: 120.0rem;
+    margin: auto;
+    background-color: var(--color-main);
+    box-shadow: 0 0 1.0rem rgb(190, 190, 190) ;
+}
+section ul, section ul li p{
+    line-height: 2.6rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+footer{
+    background: none;
+    background-color: var(--color-primary);
+    margin-top:2rem;
+}
+footer ul li{
+    text-align: center;
+    color: #fff;
+    font-size: small;
+}
+footer address ul{
+    padding: 1rem;
+}
+.history{
+    transition-duration: 0.5s;
+}
+.history:target{
+    background-color: #ccc;
+    color: #222;
+}
+/* responsive */
+@media screen and (max-width: 80rem){
+    header h1{
+        font-size:2rem;
+        margin-bottom: 1%;
+    }
+    header h1 .material-icons{
+        display: inline-block;
+    }
+    section h2{
+        font-size: 2rem;
+    }
+    header h1 span{
+        vertical-align: middle;
+    }
+    nav ul{
+        width: auto;
+        margin: 0;
+        display: none;
+        margin-bottom: .1rem;
+    }
+    nav ul li{
+        display: block;
+        width: auto;
+        text-align: left;
+        
+    }
+    nav ul li a{
+        padding-left: 1rem;
+    }
+    .aside{
+        width: auto;
+        margin: 0 1%;
+    }
+    .aside h2{
+        text-shadow: none;
+        display: none;
+    }
+    main{
+        margin: 0 1%;
+    }
+
+}
