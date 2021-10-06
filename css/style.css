@@ -97,7 +97,9 @@ nav ul li:hover a{
     color: #fff;
     text-shadow: .8rem .8rem 0 #333333, 1.1rem 1.1rem 0 #fafafa;
 }
-
+.color-main-title{
+    color: #222
+}
 section h2{
     text-align: left;
     margin-bottom: 0.3rem;
@@ -115,7 +117,9 @@ section ul, section ul li p{
     padding: 1rem;
     text-align: justify;
 }
-
+.division{
+    display: flex;
+}
 footer{
     background: none;
     background-color: var(--color-primary);
@@ -156,6 +160,9 @@ footer address ul{
         margin: 0;
         display: none;
         margin-bottom: .1rem;
+    }
+    .appearNavBar{
+        display: block;
     }
     nav ul li{
         display: block;
